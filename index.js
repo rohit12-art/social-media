@@ -16,7 +16,7 @@ const connection = require('./db/db');
 app.use(require('./router/router'));
 
 app.get("/", (req,res) => {
-    res.send("welcome to home");
+    res.send({title:'Welcome to Home Page!'});
 } )
 
 app.listen(PORT, () => {
