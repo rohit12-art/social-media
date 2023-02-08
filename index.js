@@ -15,9 +15,9 @@ const connection = require('./db/db');
 
 app.use(require('./router/router'));
 
-// app.get("/", (req,res) => {
-//     res.send("welcome to home");
-// } )
+app.get("/", (req,res) => {
+    res.send("welcome to home");
+} )
 
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
